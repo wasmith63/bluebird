@@ -1,0 +1,208 @@
+2015-03-27 20:59:24,556 INFO: microblog startup [in /home/was/bluebird/app/__init__.py:40]
+2015-03-27 21:02:45,240 INFO: microblog startup [in /home/was/bluebird/app/__init__.py:39]
+2015-03-27 21:09:22,583 INFO: microblog startup [in /home/was/bluebird/app/__init__.py:39]
+2015-03-27 21:09:47,081 INFO: microblog startup [in /home/was/bluebird/app/__init__.py:39]
+2015-03-27 21:10:26,337 INFO: microblog startup [in /home/was/bluebird/app/__init__.py:39]
+2015-03-27 21:10:47,731 INFO: microblog startup [in /home/was/bluebird/app/__init__.py:39]
+2015-03-27 21:12:10,253 INFO: microblog startup [in /home/was/bluebird/app/__init__.py:39]
+2015-03-27 21:13:49,340 INFO: microblog startup [in /home/was/bluebird/app/__init__.py:39]
+2015-03-27 21:14:00,419 INFO: microblog startup [in /home/was/bluebird/app/__init__.py:39]
+2015-03-27 21:16:56,861 INFO: microblog startup [in /home/was/bluebird/app/__init__.py:39]
+2015-03-27 21:17:04,410 INFO: microblog startup [in /home/was/bluebird/app/__init__.py:39]
+2015-03-27 21:17:04,813 INFO: microblog startup [in /home/was/bluebird/app/__init__.py:39]
+2015-03-27 21:22:21,857 INFO: microblog startup [in /home/was/bluebird/app/__init__.py:39]
+2015-03-27 21:22:22,154 INFO: microblog startup [in /home/was/bluebird/app/__init__.py:39]
+2015-03-27 21:23:09,074 INFO: microblog startup [in /home/was/bluebird/app/__init__.py:39]
+2015-03-27 21:23:19,692 INFO: microblog startup [in /home/was/bluebird/app/__init__.py:39]
+2015-03-27 21:23:51,765 INFO: microblog startup [in /home/was/bluebird/app/__init__.py:39]
+2015-03-27 21:23:52,063 INFO: microblog startup [in /home/was/bluebird/app/__init__.py:39]
+2015-03-27 21:47:51,162 INFO: microblog startup [in /home/was/bluebird/app/__init__.py:39]
+2015-03-27 21:47:51,465 INFO: microblog startup [in /home/was/bluebird/app/__init__.py:39]
+2015-03-27 21:50:24,655 INFO: microblog startup [in /home/was/bluebird/app/__init__.py:39]
+2015-03-27 21:50:31,420 INFO: microblog startup [in /home/was/bluebird/app/__init__.py:39]
+2015-03-27 21:50:31,719 INFO: microblog startup [in /home/was/bluebird/app/__init__.py:39]
+2015-03-27 21:52:31,843 INFO: microblog startup [in /home/was/bluebird/app/__init__.py:39]
+2015-03-27 21:52:32,139 INFO: microblog startup [in /home/was/bluebird/app/__init__.py:39]
+2015-03-27 21:54:41,508 INFO: microblog startup [in /home/was/bluebird/app/__init__.py:39]
+2015-03-27 21:55:06,348 ERROR: Exception on /user/wasmith2 [GET] [in /home/was/bluebird/local/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/home/was/bluebird/local/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/was/bluebird/local/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/was/bluebird/local/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/was/bluebird/local/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/was/bluebird/local/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/was/bluebird/local/lib/python2.7/site-packages/flask_login.py", line 758, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/was/bluebird/app/views.py", line 113, in user
+    posts=posts)
+  File "/home/was/bluebird/local/lib/python2.7/site-packages/flask/templating.py", line 128, in render_template
+    context, ctx.app)
+  File "/home/was/bluebird/local/lib/python2.7/site-packages/flask/templating.py", line 110, in _render
+    rv = template.render(context)
+  File "/home/was/bluebird/local/lib/python2.7/site-packages/jinja2/environment.py", line 969, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/was/bluebird/local/lib/python2.7/site-packages/jinja2/environment.py", line 742, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/was/bluebird/app/templates/user.html", line 2, in top-level template code
+    {% extends "base.html" %}
+  File "/home/was/bluebird/app/templates/base.html", line 27, in top-level template code
+    {% block content %}{% endblock %}
+  File "/home/was/bluebird/app/templates/user.html", line 25, in block "content"
+    {% for post in posts %}
+TypeError: 'Pagination' object is not iterable
+2015-03-27 21:55:11,292 ERROR: Exception on /user/wasmith2 [GET] [in /home/was/bluebird/local/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/home/was/bluebird/local/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/was/bluebird/local/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/was/bluebird/local/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/was/bluebird/local/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/was/bluebird/local/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/was/bluebird/local/lib/python2.7/site-packages/flask_login.py", line 758, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/was/bluebird/app/views.py", line 113, in user
+    posts=posts)
+  File "/home/was/bluebird/local/lib/python2.7/site-packages/flask/templating.py", line 128, in render_template
+    context, ctx.app)
+  File "/home/was/bluebird/local/lib/python2.7/site-packages/flask/templating.py", line 110, in _render
+    rv = template.render(context)
+  File "/home/was/bluebird/local/lib/python2.7/site-packages/jinja2/environment.py", line 969, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/was/bluebird/local/lib/python2.7/site-packages/jinja2/environment.py", line 742, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/was/bluebird/app/templates/user.html", line 2, in top-level template code
+    {% extends "base.html" %}
+  File "/home/was/bluebird/app/templates/base.html", line 27, in top-level template code
+    {% block content %}{% endblock %}
+  File "/home/was/bluebird/app/templates/user.html", line 25, in block "content"
+    {% for post in posts %}
+TypeError: 'Pagination' object is not iterable
+2015-03-27 21:56:18,749 ERROR: Exception on /user/Bill [GET] [in /home/was/bluebird/local/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/home/was/bluebird/local/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/was/bluebird/local/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/was/bluebird/local/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/was/bluebird/local/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/was/bluebird/local/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/was/bluebird/local/lib/python2.7/site-packages/flask_login.py", line 758, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/was/bluebird/app/views.py", line 113, in user
+    posts=posts)
+  File "/home/was/bluebird/local/lib/python2.7/site-packages/flask/templating.py", line 128, in render_template
+    context, ctx.app)
+  File "/home/was/bluebird/local/lib/python2.7/site-packages/flask/templating.py", line 110, in _render
+    rv = template.render(context)
+  File "/home/was/bluebird/local/lib/python2.7/site-packages/jinja2/environment.py", line 969, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/was/bluebird/local/lib/python2.7/site-packages/jinja2/environment.py", line 742, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/was/bluebird/app/templates/user.html", line 2, in top-level template code
+    {% extends "base.html" %}
+  File "/home/was/bluebird/app/templates/base.html", line 27, in top-level template code
+    {% block content %}{% endblock %}
+  File "/home/was/bluebird/app/templates/user.html", line 25, in block "content"
+    {% for post in posts %}
+TypeError: 'Pagination' object is not iterable
+2015-03-27 21:57:44,081 INFO: microblog startup [in /home/was/bluebird/app/__init__.py:39]
+2015-03-27 21:57:55,923 ERROR: Exception on /user/wasmith2 [GET] [in /home/was/bluebird/local/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/home/was/bluebird/local/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/was/bluebird/local/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/was/bluebird/local/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/was/bluebird/local/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/was/bluebird/local/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/was/bluebird/local/lib/python2.7/site-packages/flask_login.py", line 758, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/was/bluebird/app/views.py", line 113, in user
+    posts=posts)
+  File "/home/was/bluebird/local/lib/python2.7/site-packages/flask/templating.py", line 128, in render_template
+    context, ctx.app)
+  File "/home/was/bluebird/local/lib/python2.7/site-packages/flask/templating.py", line 110, in _render
+    rv = template.render(context)
+  File "/home/was/bluebird/local/lib/python2.7/site-packages/jinja2/environment.py", line 969, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/was/bluebird/local/lib/python2.7/site-packages/jinja2/environment.py", line 742, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/was/bluebird/app/templates/user.html", line 2, in top-level template code
+    {% extends "base.html" %}
+  File "/home/was/bluebird/app/templates/base.html", line 27, in top-level template code
+    {% block content %}{% endblock %}
+  File "/home/was/bluebird/app/templates/user.html", line 25, in block "content"
+    {% for post in posts %}
+TypeError: 'Pagination' object is not iterable
+2015-03-27 21:58:33,108 ERROR: Exception on /user/Bill [GET] [in /home/was/bluebird/local/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/home/was/bluebird/local/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/was/bluebird/local/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/was/bluebird/local/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/was/bluebird/local/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/was/bluebird/local/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/was/bluebird/local/lib/python2.7/site-packages/flask_login.py", line 758, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/was/bluebird/app/views.py", line 113, in user
+    posts=posts)
+  File "/home/was/bluebird/local/lib/python2.7/site-packages/flask/templating.py", line 128, in render_template
+    context, ctx.app)
+  File "/home/was/bluebird/local/lib/python2.7/site-packages/flask/templating.py", line 110, in _render
+    rv = template.render(context)
+  File "/home/was/bluebird/local/lib/python2.7/site-packages/jinja2/environment.py", line 969, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/was/bluebird/local/lib/python2.7/site-packages/jinja2/environment.py", line 742, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/was/bluebird/app/templates/user.html", line 2, in top-level template code
+    {% extends "base.html" %}
+  File "/home/was/bluebird/app/templates/base.html", line 27, in top-level template code
+    {% block content %}{% endblock %}
+  File "/home/was/bluebird/app/templates/user.html", line 25, in block "content"
+    {% for post in posts %}
+TypeError: 'Pagination' object is not iterable
+2015-03-27 22:00:03,962 INFO: microblog startup [in /home/was/bluebird/app/__init__.py:39]
+2015-03-27 22:18:23,980 INFO: microblog startup [in app/__init__.py:39]
+2015-03-27 22:25:27,663 INFO: microblog startup [in /home/was/bluebird/app/__init__.py:39]
+2015-03-28 12:38:38,913 INFO: microblog startup [in app/__init__.py:42]
+2015-03-28 12:45:11,593 INFO: microblog startup [in app/__init__.py:42]
+2015-03-28 12:51:32,630 INFO: microblog startup [in app/__init__.py:42]
+2015-03-28 16:46:27,108 INFO: microblog startup [in /home/was/bluebird/app/__init__.py:42]
+2015-03-28 16:47:22,018 INFO: microblog startup [in /home/was/bluebird/app/__init__.py:42]
+2015-03-28 16:57:48,065 INFO: microblog startup [in /home/was/bluebird/app/__init__.py:42]
+2015-03-28 16:59:05,210 INFO: microblog startup [in /home/was/bluebird/app/__init__.py:41]
+2015-03-28 16:59:05,597 INFO: microblog startup [in /home/was/bluebird/app/__init__.py:41]
+2015-03-28 17:03:02,195 INFO: microblog startup [in /home/was/bluebird/app/__init__.py:41]
+2015-03-28 17:03:16,467 INFO: microblog startup [in /home/was/bluebird/app/__init__.py:41]
+2015-03-28 17:08:55,031 INFO: microblog startup [in /home/was/bluebird/app/__init__.py:41]
+2015-03-28 17:09:45,085 INFO: microblog startup [in /home/was/bluebird/app/__init__.py:61]
+2015-03-28 17:10:29,757 INFO: microblog startup [in /home/was/bluebird/app/__init__.py:61]
+2015-03-28 17:10:30,774 INFO: microblog startup [in /home/was/bluebird/app/__init__.py:61]
+2015-03-28 17:12:07,031 INFO: microblog startup [in /home/was/bluebird/app/__init__.py:61]
+2015-03-28 17:12:15,559 INFO: microblog startup [in /home/was/bluebird/app/__init__.py:61]
+2015-03-28 17:12:25,688 INFO: microblog startup [in /home/was/bluebird/app/__init__.py:61]
+2015-03-28 17:12:26,683 INFO: microblog startup [in /home/was/bluebird/app/__init__.py:61]
+2015-03-30 21:28:05,951 INFO: microblog startup [in /home/was/bluebird/app/__init__.py:61]
+2015-03-30 21:28:07,655 INFO: microblog startup [in /home/was/bluebird/app/__init__.py:61]
+2015-03-30 21:28:53,468 INFO: microblog startup [in /home/was/bluebird/app/__init__.py:61]
+2015-03-30 21:29:05,026 INFO: microblog startup [in /home/was/bluebird/app/__init__.py:61]
+2015-03-30 21:29:23,470 INFO: microblog startup [in /home/was/bluebird/app/__init__.py:61]
